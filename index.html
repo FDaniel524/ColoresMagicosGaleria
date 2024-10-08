@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">  
+<head>    
+    <title>Galería mágica</title>    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    
+    <link rel="shortcut icon" href="icono.png">
+    <link href="styles.css" rel="stylesheet">
+    <script src="app.js">
+        efectoIconos(1);
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>  
+<body>
+    <nav>
+        <p>Colores Mágicos</p>
+        <img src="fondosYPortadas/coloresmagicos.png" class="logotipo">
+        <p>Galeria Mágica</p>
+    </nav>
+    <div class="contenedorPadre"> 
+        <div class="contenedorHijo" id="1" onmouseover="efectoIconos(1)" onclick="mostrarOcultarGaleria('seccionNinias')">
+            <img src="fondosYPortadas/niniaIcono.png">
+            <p>Niñas</p>
+        </div>
+        <div class="contenedorHijo" id="2" onmouseover="efectoIconos(2)">
+            <img src="fondosYPortadas/ninioIcono.png">
+            <p>Niños</p>
+        </div>
+        <div class="contenedorHijo" id="3" onmouseover="efectoIconos(3)">
+            <img src="fondosYPortadas/estacionesIcono.png">
+            <p>Temporada</p>
+        </div>
+        <div class="contenedorHijo" id="4" onmouseover="efectoIconos(4)">
+            <img src="fondosYPortadas/eventosIcono.png">
+            <p>Eventos</p>
+        </div>
+    </div> 
+    <div class="seccionesOculto" id="seccionNinias">
+        <img src="fondosYPortadas/cerrar-sesion.png" id="cerrarSesion" onclick="mostrarOcultarGaleria('seccionNinias')">
+        <p>Galeria de niñas</p>
+        <script>galeriaNinias();</script>
+    </div>
+</body>  
+</html>
